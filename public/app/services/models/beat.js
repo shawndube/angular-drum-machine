@@ -16,7 +16,7 @@ var Beat = function() {
   }
 
   function toggle() {
-    active = (active ? false : true);
+    active = !active;
   }
 
   // Return public functions

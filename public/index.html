@@ -62,7 +62,7 @@
           <ul class="instrument">
             <li class='instrument-name'>
               {{row.getInstrument().getName()}}<br>
-              <span>{{row.getInstrument().getDescription()}}<span>
+                <span>{{row.getInstrument().getDescription()}}</span>
             </li>
             <li data-ng-repeat="beat in row.getBeats()">
               <button class="btn" ng-class="{'btn-on':beat.isActive()}" 

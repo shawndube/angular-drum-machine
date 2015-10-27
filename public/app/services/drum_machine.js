@@ -36,7 +36,7 @@ app.factory('drumMachine', function($http, $q, timerQueue) {
       _gridLength = response.data.gridLength;
       setTempo(response.data.tempo);
 
-      for(var i = 0; i < 4; i++) {
+      for(var i = 0; i < response.data.rows.length; i++) {  
         for(var j = 0; j < _gridLength; j++) {
           if (response.data.rows[i][j] === "1") {
             _rows[i].getBeats()[j].activate();
